@@ -12,7 +12,7 @@ public class Runaway : MonoBehaviour {
 	}
 
 	// Update is called once per frame
-	void Update () {
+	void FixedUpdate () {
 		Vector3 direction = Vector3.Normalize(predator.position - transform.position);
 		obj.AddForce (direction * forceAmt);
 	}

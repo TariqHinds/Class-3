@@ -13,7 +13,7 @@ public class Physics : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	void FixedUpdate () {
 		if (Input.GetKeyDown (KeyCode.W)) {
 			sphere.AddForce (Vector3.forward * forceAmt); 
 		}
@@ -27,18 +27,23 @@ public class Physics : MonoBehaviour {
 			sphere.AddForce (Vector3.right * forceAmt); 
 		}
 	}
-		void OnTriggerEnter(Collider col){
-		transform.localScale *= 2f;
+		void OnTriggerStay(Collider col){
+		transform.localScale *= 1f;
 
-		if (sphere >= 5f) {
+		/*if (sphere >= 5f) {
 			gameObject.SetActive (false);
-			/*else 
+			else 
 			{
 				gameObject.SetActive (true);
 			}
 		 
 		}
+*/
+}
+	void OnCollisionEnter(Collision col){
+		if(col.gameObject.CompareTag("playable")){
+
 		}
-	
 	}
+
 
