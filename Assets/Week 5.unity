@@ -210,7 +210,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e0d6dd3685dfbbf4484e2fc73424c834, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  predator: {fileID: 0}
+  target: {fileID: 201517622}
   forceAmt: 100
 --- !u!1 &172329085
 GameObject:
@@ -312,7 +312,7 @@ GameObject:
   - component: {fileID: 201517623}
   m_Layer: 0
   m_Name: Sphere
-  m_TagString: Untagged
+  m_TagString: playable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -410,6 +410,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4ba4402e92a1b542b7d49a40dde2051, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sphere: {fileID: 0}
   direction: {x: 0, y: 0, z: 0}
   forceAmt: 30
 --- !u!1 &1189156247
