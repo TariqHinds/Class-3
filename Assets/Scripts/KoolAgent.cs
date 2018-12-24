@@ -16,7 +16,7 @@ public class KoolAgent : MonoBehaviour {
 	}
 
 void OnTriggerStay(Collider col){
-		if (col.gameObject.CompareTag (bond)) {
+		if (col.gameObject.CompareTag ("bond")) {
 			nav.destination = col.target.position;
 		}
 	}
